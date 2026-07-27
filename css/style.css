@@ -1,5 +1,11 @@
 form{
-    max-width: 350px;
+    max-width: 780px;
+}
+
+.grupos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .campo{
@@ -23,5 +29,17 @@ button{
     padding: 6px;
     font-size: 16px;
     cursor: pointer;
+}
+
+fieldset {
+    flex: 1; /* cada um ocupa metade do espaço disponível */
+}
+
+p{
+    font-weight: bold;
+}
+
+.gender_group{
+    border-color: black;
 }
 
