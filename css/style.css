@@ -32,14 +32,18 @@ button{
 }
 
 fieldset {
+    display: flex;
     flex: 1; /* cada um ocupa metade do espaço disponível */
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 p{
     font-weight: bold;
 }
 
-.gender_group{
-    border-color: black;
+.gender_group {
+    gap: 10px;
 }
 
