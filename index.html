@@ -27,7 +27,7 @@
 
                             <label for="user_name">Nome:</label>
                             <!-- type é o tipo de dado que vai receber / name é o nome do atributo -->
-                            <input type="text" name="user_name" id="user_name">  <!-- required significa obrigatório -->
+                            <input type="text" name="user_name" id="user_name" required>  <!-- required significa obrigatório -->
                         </div>
 
                         <div class="campo">
@@ -91,7 +91,7 @@
 
                         <div>
                             <label for="user_state">Estado</label>
-                            <select name="States" id="States">
+                            <select name="States" id="States" required>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -120,6 +120,13 @@
                                 <option value="SE">Sergipe</option>
                                 <option value="TO">Tocantins</option>
                             </select>
+                        </div>
+
+                        <div>
+
+                            <label for="user_city">Cidade</label>
+                            <input type="text" name="user_city" id="user_city" placeholder="Ex.: Parobé" autocomplete="address-level2">
+
                         </div>
 
                     </fieldset>
