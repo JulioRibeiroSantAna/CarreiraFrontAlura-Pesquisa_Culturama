@@ -1,3 +1,11 @@
+
+:root{
+
+    --fonte-titulo: 'Fjalla One', sans-serif;
+    --fonte-texto: 'Work Sans', sans-serif;
+
+}
+
 form{
     max-width: 780px;
 }
