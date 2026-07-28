@@ -25,34 +25,34 @@
 
                         <div class="campo">
 
-                            <label for="user_name">Nome:</label>
+                            <label for="id_name">Nome:</label>
                             <!-- type é o tipo de dado que vai receber / name é o nome do atributo -->
-                            <input type="text" name="user_name" id="user_name" required>  <!-- required significa obrigatório -->
+                            <input type="text" name="user_name" id="id_name" required>  <!-- required significa obrigatório -->
                         </div>
 
                         <div class="campo">
-                            <label for="user_age">Idade</label>
-                            <input type="number" name="user_age" min="12" max="100" id="user_age" required placeholder=" Entre 12-100 anos">
+                            <label for="id_age">Idade</label>
+                            <input type="number" name="user_age" min="12" max="100" id="id_age" required placeholder=" Entre 12-100 anos">
                         </div>
 
                         <div class="campo">
-                            <label for="user_birth_date">Data de Nascimento</label>
-                            <input type="date" name="user_birth_date" id="user_birth_date">
+                            <label for="id_birth_date">Data de Nascimento</label>
+                            <input type="date" name="user_birth_date" id="id_birth_date">
                         </div>
 
                         <div class="campo">
-                            <label for="user_email">E-mail</label>
-                            <input type="email" name="user_email" id="user_email" required>
+                            <label for="id_email">E-mail</label>
+                            <input type="email" name="user_email" id="id_email" required>
                         </div>
 
                         <div class="campo">
-                            <label for="user_cellphone">Telefone</label>
-                            <input type="tel" name="user_cellphone" id="user_cellphone" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen">
+                            <label for="id_cellphone">Telefone</label>
+                            <input type="tel" name="user_cellphone" id="id_cellphone" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen">
                         </div>
 
                         <div class="campo">
-                            <label for="user_image">Foto</label>
-                            <input type="file" accept="image/*" name="user_image" id="user_image">
+                            <label for="id_image">Foto</label>
+                            <input type="file" accept="image/*" name="image" id="id_image">
                         </div>
 
                     </fieldset>
@@ -66,22 +66,22 @@
                     
                             <div class="gender_group">
 
-                                <input type="radio" name="user_gender" value="Masculino">
-                                <label for="user_gender">Masculino</label>
+                                <input type="radio" name="user_gender" value="Masculino" id="id_male">
+                                <label for="id_male">Masculino</label>
 
-                                <input type="radio" name="user_gender" value="Feminino">
-                                <label for="user_gender">Feminino</label>
+                                <input type="radio" name="user_gender" value="Feminino" id="id_female">
+                                <label for="id_female">Feminino</label>
 
-                                <input type="radio" name="user_gender" value="Prefiro não Informar">
-                                <label for="user_gender">Prefiro não Informar</label>
+                                <input type="radio" name="user_gender" value="Prefiro não Informar" id="id_not_informed">
+                                <label for="id_not_informed">Prefiro não Informar</label>
 
                             </div>
 
                         </div>
 
                         <div>
-                            <label for="marital_status">Estado Civil</label>
-                            <select name="marital_status" id="marital_status">
+                            <label for="id_marital_status">Estado Civil</label>
+                            <select name="marital_status" id="id_marital_status">
                                 <option value="casado">Casado</option>
                                 <option value="solteiro">Solteiro</option>
                                 <option value="divorciado">Divorciado</option>
@@ -90,8 +90,8 @@
                         </div>
 
                         <div>
-                            <label for="user_state">Estado</label>
-                            <select name="States" id="States" required>
+                            <label for="id_state">Estado</label>
+                            <select name="user_state" id="id_state" required>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -124,8 +124,8 @@
 
                         <div>
 
-                            <label for="user_city">Cidade</label>
-                            <input type="text" name="user_city" id="user_city" placeholder="Ex.: Parobé" autocomplete="address-level2">
+                            <label for="id_city">Cidade</label>
+                            <input type="text" name="user_city" id="id_city" placeholder="Ex.: Parobé" autocomplete="address-level2">
 
                         </div>
 
@@ -139,29 +139,49 @@
                         <p>Redes Sociais:</p>
 
                         <div >
-                            <input type="checkbox" name="social" value="instagram">
-                            <label for="social">Instagram</label>
+                            <input type="checkbox" name="social" value="instagram" id="id_instagram">
+                            <label for="id_instagram">Instagram</label>
                         </div>
 
                          <div>
-                            <input type="checkbox" name="social" value="facebook">
-                            <label for="social">Facebook</label>
+                            <input type="checkbox" name="social" value="facebook" id="id_facebook">
+                            <label for="id_facebook">Facebook</label>
                         </div>
 
                         <div>
-                            <input type="checkbox" name="social" value="tiktok">
-                            <label for="social">TikTok</label>
+                            <input type="checkbox" name="social" value="tiktok" id="id_tiktok">
+                            <label for="id_tiktok">TikTok</label>
                         </div>
 
                          <div>
-                            <input type="checkbox" name="social" value="Linkedin">
-                            <label for="social">Linkedin</label>
+                            <input type="checkbox" name="social" value="Linkedin" id="id_linkedin">
+                            <label for="id_linkedin">Linkedin</label>
                         </div>
 
                         <div>
-                            <input type="checkbox" name="social" value="Twiter">
-                            <label for="social">Twiter</label>
+                            <input type="checkbox" name="social" value="Twiter" id="id_twiter">
+                            <label for="id_twiter">Twiter</label>
                         </div>
+
+                        <label for="id_musical_style">Estilo musical</label>
+                        <input type="text" id="id_musical_style" list="id_list_musical_style" name="musical_style">
+                        <datalist id="id_list_musical_style">
+                            
+                            <option value="samba">Samba</option>
+                            <option value="pagode">Pagode</option>
+                            <option value="blues">Blues</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="mpb">MPB</option>
+                            <option value="rock">Rock</option>
+                            <option value="clássico">Clássico</option>
+                            <option value="bossanova">Bossa-Nova</option>
+                            <option value="pop">Pop</option>
+
+                        </datalist>
+
+                        <label for="id_favorite_color">Cor Favorita</label>
+
+                        <input type="color" id="id_favorite_color" name="favorite_color" value="#FF0000">
                         
 
                     </fieldset>
@@ -170,6 +190,7 @@
 
                 <!-- Precisa do button com o type pra dizer que vai submeter aquele dado -->
                 <button type="submit">Enviar</button>
+                
 
             </form>
 
