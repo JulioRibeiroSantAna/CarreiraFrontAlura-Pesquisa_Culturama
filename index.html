@@ -57,12 +57,14 @@
 
                         <div class="campo">
                             <label for="id_cellphone">Telefone</label>
-                            <input type="tel" name="user_cellphone" id="id_cellphone" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen">
+                            <input type="tel" name="user_cellphone" id="id_cellphone" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen" aria-describedby="id_phone_help" >
+                            <small id="id_phone_help">Preencha com 11 dígitos no formato DDD + número sem espaço ou hífen</small>
                         </div>
 
                         <div class="campo">
                             <label for="id_image">Foto</label>
-                            <input type="file" accept="image/*" name="image" id="id_image">
+                            <input type="file" accept="image/*" name="image" id="id_image" aria-describedby="id_image_help">
+                            <small id="id_image_help">Envie uma foto no formato PNG ou JPEG</small>
                         </div>
 
                     </fieldset>
